@@ -26,6 +26,10 @@ theme:
       primary: teal 
       accent: lime
 
+nav:
+    - 'index.md'
+    - 'about.md'
+
 markdown_extensions:
   - pymdownx.highlight:
       anchor_linenums: true
