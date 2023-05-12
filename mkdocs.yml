@@ -52,6 +52,8 @@ markdown_extensions:
   - pymdownx.caret
   - pymdownx.keys
   - def_list
+  - toc:
+      permalink: true
   - pymdownx.tasklist:
       custom_checkbox: true
   - pymdownx.tilde
