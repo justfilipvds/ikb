@@ -18,13 +18,10 @@ ORDER BY SizeInBytes desc
 
 # Blocking queries
 
-```
-💡 **Info**
-
-This query can help you finding the root cause of performance issues (for example: kpi's, lookups, data searches, ...)
-
-You run this query on the database via SQL Server Management Studio, and it returns the active queries that requires a long time to process. You can see the sql statement, the time running and the process which is blocking the current query.
-```
+!!! info
+    This query can help you finding the root cause of performance issues (for example: kpi's, lookups, data searches, ...)
+    
+    You run this query on the database via SQL Server Management Studio, and it returns the active queries that requires a long time to process. You can see the sql statement, the time running and the process which is blocking the current query.
 
 ``` sql linenums="1"
 use master;
