@@ -27,8 +27,12 @@ theme:
       accent: lime
 
 nav:
-    - 'index.md'
-    - 'about.md'
+    - Start: 'index.md'
+    - SQL: 
+        - FleetWave: 'sql/fleetwave.md'
+        - SQL: 'sql/sqlserver.md'
+        - ORACLE: 'sql/oracle.md'
+    - About: 'about.md'
 
 markdown_extensions:
   - pymdownx.highlight:
