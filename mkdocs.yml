@@ -6,6 +6,7 @@ theme:
     - navigation.sections
     - toc.integrate
     - navigation.top
+    - search.share
     - search.suggest
     - search.highlight
     - content.tabs.link
@@ -27,15 +28,6 @@ theme:
       primary: teal 
       accent: lime
 
-nav:
-    - Start: 'index.md'
-    - SQL: 
-        - 'sql/index.md'
-        - FleetWave: 'sql/fleetwave.md'
-        - SQL: 'sql/sqlserver.md'
-        - ORACLE: 'sql/oracle.md'
-    - About: 'about.md'
-
 markdown_extensions:
   - pymdownx.highlight:
       anchor_linenums: true
@@ -47,6 +39,8 @@ markdown_extensions:
   - footnotes
   - pymdownx.details
   - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
   - pymdownx.mark
   - pymdownx.critic
   - pymdownx.caret
@@ -54,10 +48,13 @@ markdown_extensions:
   - def_list
   - toc:
       permalink: true
+      title: On this page
+      permalink_title: Anchor link to this section for reference
   - pymdownx.tasklist:
       custom_checkbox: true
   - pymdownx.tilde
   - attr_list
+  - tables 
   - md_in_html
   - pymdownx.emoji:
       emoji_index: !!python/name:materialx.emoji.twemoji
@@ -68,3 +65,24 @@ plugins:
 
 copyright: |
   &copy; 2023 Filip Vanderstappen
+
+nav:
+    - Start: 'index.md'
+    - SQL: 
+        - 'sql/index.md'
+        - FleetWave: 'sql/fleetwave.md'
+        - SQL: 'sql/sqlserver.md'
+        - Oracle: 'sql/oracle.md'
+    - About: 'about.md'
+
+extra:
+  consent:
+    title: Cookie consent
+    description: >- 
+      We use cookies to recognize your repeated visits and preferences, as well
+      as to measure the effectiveness of our documentation and whether users
+      find what they're searching for. With your consent, you're helping us to
+      make our documentation better.
+
+extra_css:
+  - stylesheets/extra.css
